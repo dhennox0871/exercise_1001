@@ -1,31 +1,29 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_widget_exercise/core.dart';
 import '../controller/hr_profile_controller.dart';
 
 class HrProfileView extends StatefulWidget {
-    const HrProfileView({Key? key}) : super(key: key);
+  const HrProfileView({Key? key}) : super(key: key);
 
-    Widget build(context, HrProfileController controller) {
+  Widget build(context, HrProfileController controller) {
     controller.view = this;
 
     return Scaffold(
-        appBar: AppBar(
+      appBar: AppBar(
         title: const Text("HrProfile"),
         actions: const [],
-        ),
-        body: SingleChildScrollView(
+      ),
+      body: SingleChildScrollView(
         child: Container(
-            padding: const EdgeInsets.all(10.0),
-            child: Column(
-            children: const [],
-            ),
+          padding: const EdgeInsets.all(10.0),
+          child: const Column(
+            children: [],
+          ),
         ),
-        ),
+      ),
     );
-    }
+  }
 
-    @override
-    State<HrProfileView> createState() => HrProfileController();
+  @override
+  State<HrProfileView> createState() => HrProfileController();
 }
-    

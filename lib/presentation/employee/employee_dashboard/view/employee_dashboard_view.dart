@@ -1,31 +1,29 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_widget_exercise/core.dart';
 import '../controller/employee_dashboard_controller.dart';
 
 class EmployeeDashboardView extends StatefulWidget {
-    const EmployeeDashboardView({Key? key}) : super(key: key);
+  const EmployeeDashboardView({Key? key}) : super(key: key);
 
-    Widget build(context, EmployeeDashboardController controller) {
+  Widget build(context, EmployeeDashboardController controller) {
     controller.view = this;
 
     return Scaffold(
-        appBar: AppBar(
+      appBar: AppBar(
         title: const Text("EmployeeDashboard"),
         actions: const [],
-        ),
-        body: SingleChildScrollView(
+      ),
+      body: SingleChildScrollView(
         child: Container(
-            padding: const EdgeInsets.all(10.0),
-            child: Column(
-            children: const [],
-            ),
+          padding: const EdgeInsets.all(10.0),
+          child: const Column(
+            children: [],
+          ),
         ),
-        ),
+      ),
     );
-    }
+  }
 
-    @override
-    State<EmployeeDashboardView> createState() => EmployeeDashboardController();
+  @override
+  State<EmployeeDashboardView> createState() => EmployeeDashboardController();
 }
-    

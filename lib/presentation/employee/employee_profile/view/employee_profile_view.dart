@@ -1,31 +1,29 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_widget_exercise/core.dart';
 import '../controller/employee_profile_controller.dart';
 
 class EmployeeProfileView extends StatefulWidget {
-    const EmployeeProfileView({Key? key}) : super(key: key);
+  const EmployeeProfileView({Key? key}) : super(key: key);
 
-    Widget build(context, EmployeeProfileController controller) {
+  Widget build(context, EmployeeProfileController controller) {
     controller.view = this;
 
     return Scaffold(
-        appBar: AppBar(
+      appBar: AppBar(
         title: const Text("EmployeeProfile"),
         actions: const [],
-        ),
-        body: SingleChildScrollView(
+      ),
+      body: SingleChildScrollView(
         child: Container(
-            padding: const EdgeInsets.all(10.0),
-            child: Column(
-            children: const [],
-            ),
+          padding: const EdgeInsets.all(10.0),
+          child: const Column(
+            children: [],
+          ),
         ),
-        ),
+      ),
     );
-    }
+  }
 
-    @override
-    State<EmployeeProfileView> createState() => EmployeeProfileController();
+  @override
+  State<EmployeeProfileView> createState() => EmployeeProfileController();
 }
-    

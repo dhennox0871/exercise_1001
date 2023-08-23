@@ -38,7 +38,7 @@ void main() async {
     if (File(m).existsSync()) {
       point++;
     } else {
-      print("${m} doesn't exists!");
+      print("$m doesn't exists!");
     }
   }
 

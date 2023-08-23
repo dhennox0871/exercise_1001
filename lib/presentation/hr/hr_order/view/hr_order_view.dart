@@ -1,31 +1,29 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_widget_exercise/core.dart';
 import '../controller/hr_order_controller.dart';
 
 class HrOrderView extends StatefulWidget {
-    const HrOrderView({Key? key}) : super(key: key);
+  const HrOrderView({Key? key}) : super(key: key);
 
-    Widget build(context, HrOrderController controller) {
+  Widget build(context, HrOrderController controller) {
     controller.view = this;
 
     return Scaffold(
-        appBar: AppBar(
+      appBar: AppBar(
         title: const Text("HrOrder"),
         actions: const [],
-        ),
-        body: SingleChildScrollView(
+      ),
+      body: SingleChildScrollView(
         child: Container(
-            padding: const EdgeInsets.all(10.0),
-            child: Column(
-            children: const [],
-            ),
+          padding: const EdgeInsets.all(10.0),
+          child: const Column(
+            children: [],
+          ),
         ),
-        ),
+      ),
     );
-    }
+  }
 
-    @override
-    State<HrOrderView> createState() => HrOrderController();
+  @override
+  State<HrOrderView> createState() => HrOrderController();
 }
-    
